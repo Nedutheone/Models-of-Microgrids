@@ -1,0 +1,30 @@
+In this model there where three DG (Distributed genertors) all with a value of either 200, 300 or 500Kw. In this systems there all have measurements  block in the control system block in the Model
+To look into any of this blocks press the arrow at the bottom right of each of the block.
+The control block can be access.
+It is under the inverter of the generators.
+from there the measurenment block can be found.
+Notice in the measurement block the values for the active and reactive power has been set to pu.
+the pu value that is measured for each of those blocks is based on the active power that is set for the block for example,
+for the 500kw inverter the base power is at 500Kw
+and as for the 200Kw the base power is set at 200Kw
+Also for the 300Kw the base power is set at 300Kw.
+This way it is easier to see how the acctive power of the generators changes when droop control, or secondary control or a disturbance is introduced in the system.
+also the same thing is for the reactive power.
+Note for the reactive power each load connected to the invetrer has a capactive reactive power. 
+it can also be noted for the secondary control in the model the time can be selected to when it can be used.
+At default I have set it at 20s but if the conditions, That the reader wants to simulate is the same that the programmer has set we will go through the steps
+for the first hase case the simulation time has been set at 10 seconds but that those not matter as long as it is longer than it the simulatiom time is fine.
+in the base case the model is allowed to rise to the base load this is at 850Kw after 3 seconds and 400Kvar for the reactive power
+To do this the block on the left which is on the left is set to those values.
+Note when setting the active or reactive block the top input accepts elemenst that are separated by commas
+as for the bottom input it just needs a space to distingush
+the same is for the droop and the secondary control
+For the droop the time at 0 is set at 0 and the time at 3 is set as 1
+as for the secondary the time at 0 is also set at 0 and the time at 5 is set at 1.
+This is done because primary control acts first before secondary control.
+As for the seond case the droop and secondary time remains the same but for the reactive and active power there is an increase of 20% to the load.
+This can be done by using the step block for the active and reactive block that was used in step one but adding 20% to the value.
+This was done to see how the control scheme would react to the power changes.
+I hope this is enough information to help the read use the block note this blocks where not built by the model but was initial built by Dr sukaimivar who has a youtube video.
+On How to use the block I used the model to test if Microgrids can be used in urban regions by making the demands of the voltgae and frequncy regulation.
+Thank you.
