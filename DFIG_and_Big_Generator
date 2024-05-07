@@ -1,0 +1,8 @@
+For this model we have placed two dfig models with a big genereator and a battery with that in mind what has been don for the following case studeies done in this
+in this model will be explained here
+As noticed the block that says reactive power and active power is used to set the load active and reactive power. for the base case the value is set at 0 seconds the active 
+power is set 15Mw and the reactive power is set at 0 Mvar. 
+Now when getting to the increased load for the load active power after the 0 seconds for the time the value was set at 5 seconds and a comma was used before it to 
+separeate the two times as for the values for the active power the value was set at 21Mw and the reactive power was set at 5.4Mvar. for the reduced load case the load was set at 9Mw 
+and the reactive power was set at -5.4Mva. This was done to see the effects of the load changes on the system.
+Thank you for using this model to understand how the system testing was done.
